@@ -1,14 +1,23 @@
-/******************************************************************************
+import java.util.Scanner;
 
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
+public class UserInputExample {
+    public static void main(String[] args) {
+        // Create a Scanner object for input
+        Scanner scanner = new Scanner(System.in);
 
-*******************************************************************************/
-public class Main
-{
-	public static void main(String[] args) {
-		System.out.println("Hello World");
-	}
+        // Ask for a string input
+        System.out.print("Enter your name: ");
+        String name = scanner.nextLine();
+
+        // Ask for a number input
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+
+        // Display the input back to the user
+        System.out.println("Hello " + name + ", you are " + age + " years old!");
+
+        // Always close the scanner
+        scanner.close();
+    }
 }
+
